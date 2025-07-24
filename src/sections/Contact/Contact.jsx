@@ -37,13 +37,13 @@ function Contact() {
       <form ref={formRef} onSubmit={handleSubmit}>
         <div className="formGroup">
           <label htmlFor="name" hidden>
-            Your Name
+            Name
           </label>
           <input
             type="text"
             name="name"
             id="name"
-            placeholder="Name"
+            placeholder="Your Name"
             required
             value={form.name}
             onChange={handleChange}
@@ -51,13 +51,13 @@ function Contact() {
         </div>
         <div className="formGroup">
           <label htmlFor="email" hidden>
-            Your Email
+            Email
           </label>
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="Email"
+            placeholder="Your Email"
             required
             value={form.email}
             onChange={handleChange}
@@ -65,12 +65,12 @@ function Contact() {
         </div>
         <div className="formGroup">
           <label htmlFor="message" hidden>
-            Type Your Message Here...
+            Message
           </label>
           <textarea
             name="message"
             id="message"
-            placeholder="Message"
+            placeholder="Type Your Message Here..."
             required
             value={form.message}
             onChange={handleChange}
