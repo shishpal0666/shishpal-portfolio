@@ -1,7 +1,19 @@
 # shishpal-portfolio
-# React + Vite
+# React + Vite Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About Me
+
+Hi! I'm Shishpal, a passionate web developer focused on building modern, responsive, and user-friendly web applications. I enjoy working with React, JavaScript, and the latest web technologies. My portfolio showcases some of my recent projects and skills.
+
+## Resume
+
+You can view or download my resume [here](src/assets/SHISHPAL_SDE.pdf).
+
+---
+
+## Project Overview
+
+This project provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
