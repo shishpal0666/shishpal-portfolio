@@ -37,7 +37,7 @@ function Contact() {
       <form ref={formRef} onSubmit={handleSubmit}>
         <div className="formGroup">
           <label htmlFor="name" hidden>
-            Name
+            Your Name
           </label>
           <input
             type="text"
@@ -51,7 +51,7 @@ function Contact() {
         </div>
         <div className="formGroup">
           <label htmlFor="email" hidden>
-            Email
+            Your Email
           </label>
           <input
             type="email"
@@ -65,7 +65,7 @@ function Contact() {
         </div>
         <div className="formGroup">
           <label htmlFor="message" hidden>
-            Message
+            Type Your Message Here...
           </label>
           <textarea
             name="message"
