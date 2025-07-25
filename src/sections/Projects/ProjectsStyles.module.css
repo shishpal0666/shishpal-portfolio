@@ -17,7 +17,10 @@
     transition: transform 200ms ease-in-out;
   }
 
-  a:hover {
+  p{
+    margin-top: 10px;
+  }
+  a:hover{
     transform: scale(1.05);
   }
 }
@@ -28,6 +31,7 @@
   align-items: center;
   gap: 30px;
 }
+
 
 @media (width >= 800px) {
   .projectsContainer {
