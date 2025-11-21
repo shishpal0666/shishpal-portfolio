@@ -7,11 +7,21 @@ function Skills() {
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
 
+      {/* Languages */}
+      <div className={styles.skillList}>
+        <SkillList skill="C++" />
+        <SkillList skill="JavaScript" />
+        <SkillList skill="Python" />
+        <SkillList skill="JAVA" />
+        <SkillList skill="SQL" />
+      </div>
+
+      <hr />
+
       {/* Frontend */}
       <div className={styles.skillList}>
         <SkillList skill="HTML" />
         <SkillList skill="CSS" />
-        <SkillList skill="JavaScript (ES6+)" />
         <SkillList skill="React.js" />
         <SkillList skill="Tailwind CSS" />
         <SkillList skill="Bootstrap" />
@@ -35,8 +45,6 @@ function Skills() {
       <div className={styles.skillList}>
         <SkillList skill="MongoDB" />
         <SkillList skill="PostgreSQL" />
-        <SkillList skill="AWS" />
-        <SkillList skill="Docker" />
         <SkillList skill="Socket.IO" />
       </div>
 

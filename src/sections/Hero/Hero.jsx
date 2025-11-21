@@ -2,28 +2,32 @@ import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/shishpal.jpeg";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
-import twitterLight from "../../assets/twitter-light.svg";
-import twitterDark from "../../assets/twitter-dark.svg";
+// import twitterLight from "../../assets/twitter-light.svg";
+// import twitterDark from "../../assets/twitter-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import SHISHPAL_SDE from "../../assets/SHISHPAL_SDE.pdf";
+import leetcodeLight from "../../assets/leetcode-light.svg";
+import leetcodeDark from "../../assets/leetcode-dark.svg";
+// import SHISHPAL_RESUME from "../../assets/SHISHPAL_RESUME.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === "light" ? sun : moon;
-  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
+  // const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
+  const leetcodeIcon = theme === "light" ? leetcodeLight : leetcodeDark;
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img
           src={heroImg}
           className={styles.hero}
+          draggable = "false"
           alt="Profile picture of Shishpal Polampally"
         />
         <img
@@ -39,7 +43,7 @@ function Hero() {
           <br />
           Polampally
         </h1>
-        <h2>Full Stack Developer</h2>
+        {/* <h2>Full Stack Developer</h2> */}
         <span>
           <a href="https://github.com/shishpal0666" target="_blank">
             <img src={githubIcon} alt="Github icon" />
@@ -50,22 +54,39 @@ function Hero() {
           >
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
-          <a href="https://x.com/shishpal_0666" target="_blank">
+          {/* <a href="https://x.com/shishpal_0666" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
+          </a> */}
+          <a href="https://leetcode.com/shishpal0666" target="_blank">
+            <img src={leetcodeIcon} alt="Leetcode icon" />
           </a>
         </span>
 
+
         <p className={styles.description}>
           I'm a final year Computer Science student at IIIT Pune with a strong
-          foundation in full-stack development and machine learning.
+          foundation in Web Development and Machine Learning.
         </p>
+        
+        <hr />
 
         <div className={styles.infoContainer}>
-          <a href="mailto:shishpalpolampally@gmail.com" ><p>Email: shishpalpolampally@gmail.com</p></a>
-          <a href="tel:+919100283901"><p>Mobile: +91 91002 83901</p></a>
+          <a href="mailto:shishpalpolampally@gmail.com">
+            <p>Email: shishpalpolampally@gmail.com</p>
+          </a>
+          <a href="tel:+919100283901">
+            <p>Mobile: +91 91002 83901</p>
+          </a>
         </div>
-        <a href={SHISHPAL_SDE} download>
+        {/* <a href={SHISHPAL_RESUME} download>
           <button className="hover">Resume</button>
+        </a> */}
+        <a
+          href="https://drive.google.com/file/d/1ttg62wqqgMsksG9a3JjDGZdBkGowUMna/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="hover">Resume ↗️</button>
         </a>
       </div>
     </section>
