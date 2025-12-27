@@ -5,11 +5,11 @@
 }
 
 .profilesContainer {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .certificatesContainer {
@@ -53,6 +53,8 @@
   flex-direction: column;
   align-items: center;
   max-width: 300px; /* Constrain the card width */
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 @media (width < 800px) {
