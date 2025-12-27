@@ -8,6 +8,7 @@ import StockManagement from '../../assets/StockManagement.png';
 import Stopwatch from '../../assets/Stopwatch.png';
 import DestinationAlert from '../../assets/DestinationAlert.png';
 import ProjectCard from '../../common/ProjectCard';
+import { PROJECT_LINKS } from '../../utils/constants';
 
 function Projects() {
 
@@ -17,60 +18,60 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={ClassFlow}
-          link="https://class-flow.vercel.app/"
+          link={PROJECT_LINKS.CLASS_FLOW.DEMO}
           h3="ClassFlow"
           p="Q&A Platform"
-          gl="https://github.com/shishpal0666/ClassFlow"
+          gl={PROJECT_LINKS.CLASS_FLOW.REPO}
         />
         <ProjectCard
           src={DevStack}
-          link="https://dev-stack-blog.vercel.app/"
+          link={PROJECT_LINKS.DEV_STACK.DEMO}
           h3="DevStack"
           p="Blog platform"
-          gl="https://github.com/shishpal0666/DevStack"
+          gl={PROJECT_LINKS.DEV_STACK.REPO}
         />
         <ProjectCard
           src={MovieMate}
-          link="https://moviemate-krjn.onrender.com/"
+          link={PROJECT_LINKS.MOVIE_MATE.DEMO}
           h3="MovieMate"
           p="Movie recommendation app"
-          gl="https://github.com/shishpal0666/MovieMate"
+          gl={PROJECT_LINKS.MOVIE_MATE.REPO}
         />
         <ProjectCard
           src={Market}
-          link="https://github.com/shishpal0666/Market"
+          link={PROJECT_LINKS.MARKET.DEMO}
           h3="Market"
           p="E-commerce platform"
-          gl="https://github.com/shishpal0666/Market"
+          gl={PROJECT_LINKS.MARKET.REPO}
         />
 
         <ProjectCard
           src={EcommerceApp}
-          link="https://e-commerce-app-seven-rho.vercel.app/"
+          link={PROJECT_LINKS.ECOMMERCE.DEMO}
           h3="E-commerce-App"
           p="E-commerce platform"
-          gl="https://github.com/shishpal0666/E-commerce-App"
+          gl={PROJECT_LINKS.ECOMMERCE.REPO}
         />
         <ProjectCard
           src={DestinationAlert}
-          link="https://destination-alert.onrender.com/"
+          link={PROJECT_LINKS.DESTINATION_ALERT.DEMO}
           h3="Destination-Alert"
           p="Destination-Alert System"
-          gl="https://github.com/shishpal0666/Destination-Alert"
+          gl={PROJECT_LINKS.DESTINATION_ALERT.REPO}
         />
         <ProjectCard
           src={Stopwatch}
-          link="https://stopwatch-shishpal.pages.dev/"
+          link={PROJECT_LINKS.STOPWATCH.DEMO}
           h3="Stopwatch"
           p="Stopwatch Application"
-          gl="https://github.com/shishpal0666/stopwatch"
+          gl={PROJECT_LINKS.STOPWATCH.REPO}
         />
         <ProjectCard
           src={StockManagement}
-          link="https://github.com/shishpal0666/StockManagement"
+          link={PROJECT_LINKS.STOCK_MANAGEMENT.DEMO}
           h3="StockManagement"
           p="Stock Management System"
-          gl="https://github.com/shishpal0666/StockManagement"
+          gl={PROJECT_LINKS.STOCK_MANAGEMENT.REPO}
         />
       </div>
     </section>

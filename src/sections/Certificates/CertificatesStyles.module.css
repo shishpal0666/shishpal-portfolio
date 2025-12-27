@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profilesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.certificatesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profileCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.2s ease-in-out;
+}
+
+.profileCard:hover {
+    transform: scale(1.05);
+}
+
+.profileCard img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* New style to target certificate images specifically */
+.certificatesContainer img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Ensure ProjectCard anchor wraps content properly */
+.certificatesContainer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px; /* Constrain the card width */
+}
+
+@media (width < 800px) {
+  .certificatesContainer {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

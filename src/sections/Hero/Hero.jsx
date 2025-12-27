@@ -12,6 +12,7 @@ import leetcodeLight from "../../assets/leetcode-light.svg";
 import leetcodeDark from "../../assets/leetcode-dark.svg";
 // import SHISHPAL_RESUME from "../../assets/SHISHPAL_RESUME.pdf";
 import { useTheme } from "../../common/ThemeContext";
+import { SOCIAL_LINKS, RESUME_LINK } from "../../utils/constants";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -27,7 +28,7 @@ function Hero() {
         <img
           src={heroImg}
           className={styles.hero}
-          draggable = "false"
+          draggable="false"
           alt="Profile picture of Shishpal Polampally"
         />
         <img
@@ -45,19 +46,19 @@ function Hero() {
         </h1>
         {/* <h2>Full Stack Developer</h2> */}
         <span>
-          <a href="https://github.com/shishpal0666" target="_blank">
+          <a href={SOCIAL_LINKS.GITHUB} target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
           <a
-            href="https://www.linkedin.com/in/shishpal-polampally/"
+            href={SOCIAL_LINKS.LINKEDIN}
             target="_blank"
           >
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
-          {/* <a href="https://x.com/shishpal_0666" target="_blank">
+          {/* <a href={SOCIAL_LINKS.TWITTER} target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
           </a> */}
-          <a href="https://leetcode.com/shishpal0666" target="_blank">
+          <a href={SOCIAL_LINKS.LEETCODE} target="_blank">
             <img src={leetcodeIcon} alt="Leetcode icon" />
           </a>
         </span>
@@ -65,9 +66,10 @@ function Hero() {
 
         <p className={styles.description}>
           I'm a final year Computer Science student at IIIT Pune with a strong
-          foundation in Web Development and Machine Learning.
+          foundation in Web Development and Machine Learning. Achived 3 ⭐ in CodeChef.
         </p>
-        
+
+
         <hr />
 
         <div className={styles.infoContainer}>
@@ -82,7 +84,7 @@ function Hero() {
           <button className="hover">Resume</button>
         </a> */}
         <a
-          href="https://drive.google.com/file/d/1ttg62wqqgMsksG9a3JjDGZdBkGowUMna/view?usp=drive_link"
+          href={RESUME_LINK}
           target="_blank"
           rel="noopener noreferrer"
         >
