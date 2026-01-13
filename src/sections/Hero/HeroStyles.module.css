@@ -23,8 +23,9 @@
   justify-content: center;
   gap: 20px;
   text-align: center;
-  height: 100dvh;
-  min-height: 500px;
+  /* min-height: 100dvh;  */
+  padding-top: 20dvh; 
+
 
   .hero {
     max-width: 200px;
