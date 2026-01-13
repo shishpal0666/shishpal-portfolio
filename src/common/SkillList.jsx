@@ -1,8 +1,11 @@
-function SkillList({  skill }) {
+import styles from './SkillList.module.css';
+
+function SkillList({ skill, src }) {
   return (
-    <span>
+    <div className={styles.skillContainer}>
+      {src ? <img src={src} alt={`${skill} logo`} className={styles.icon} /> : null}
       <p>{skill}</p>
-    </span>
+    </div>
   );
 }
 

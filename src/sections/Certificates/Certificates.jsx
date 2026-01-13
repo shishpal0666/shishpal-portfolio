@@ -19,13 +19,25 @@ function Certificates() {
             <h1 className="sectionTitle">Profiles & Certificates</h1>
 
             <div className={styles.profilesContainer}>
+                {/* LeetCode Stats Card */}
                 <a href={SOCIAL_LINKS.LEETCODE} target="_blank" rel="noreferrer" className={styles.profileCard}>
-                    <img src={leetcodeIcon} alt="LeetCode Logo" />
-                    <h3>LeetCode</h3>
+                    <img
+                        src="https://leetcard.jacoblin.cool/shishpal0666?theme=dark&font=Roboto%20Mono&ext=heatmap"
+                        alt="LeetCode Stats"
+                        className={styles.statsImage}
+                    />
                 </a>
+
+                {/* CodeChef Card */}
                 <a href={SOCIAL_LINKS.CODECHEF} target="_blank" rel="noreferrer" className={styles.profileCard}>
-                    <img src={codechefIcon} alt="CodeChef Logo" />
-                    <h3>CodeChef</h3>
+                    <div className={styles.codechefCard}>
+                        <img src={codechefIcon} alt="CodeChef Logo" className={styles.mnIcon} />
+                        <div className={styles.codechefInfo}>
+                            <h3>CodeChef</h3>
+                            <p>3★ Coder</p>
+                            <p>Current Rating: 1634</p>
+                        </div>
+                    </div>
                 </a>
             </div>
 

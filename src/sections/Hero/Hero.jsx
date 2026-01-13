@@ -2,15 +2,12 @@ import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/shishpal.jpeg";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
-// import twitterLight from "../../assets/twitter-light.svg";
-// import twitterDark from "../../assets/twitter-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import leetcodeLight from "../../assets/leetcode-light.svg";
 import leetcodeDark from "../../assets/leetcode-dark.svg";
-// import SHISHPAL_RESUME from "../../assets/SHISHPAL_RESUME.pdf";
 import { useTheme } from "../../common/ThemeContext";
 import { SOCIAL_LINKS, RESUME_LINK } from "../../utils/constants";
 
@@ -18,7 +15,6 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === "light" ? sun : moon;
-  // const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
   const leetcodeIcon = theme === "light" ? leetcodeLight : leetcodeDark;
@@ -38,7 +34,7 @@ function Hero() {
           onClick={toggleTheme}
         />
       </div>
-      <div className={styles.info}>
+      <div className={`${styles.info} fade-in`}>
         <h1>
           Shishpal
           <br />
@@ -55,9 +51,6 @@ function Hero() {
           >
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
-          {/* <a href={SOCIAL_LINKS.TWITTER} target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
-          </a> */}
           <a href={SOCIAL_LINKS.LEETCODE} target="_blank">
             <img src={leetcodeIcon} alt="Leetcode icon" />
           </a>

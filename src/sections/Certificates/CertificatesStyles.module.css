@@ -27,16 +27,74 @@
     text-decoration: none;
     color: var(--text-color);
     transition: transform 0.2s ease-in-out;
+    width: fit-content;
 }
 
 .profileCard:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
-.profileCard img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
+.statsImage {
+    max-width: 100%;
+    width: 400px; /* Good size for the stats card */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+/* Custom CodeChef Card to match LeetCode style */
+.codechefCard {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #1e1e1e; /* Matches dark theme of LeetCard */
+    border: 1px solid #333;
+    border-radius: 10px; /* LeetCard has roughly 10px radius */
+    padding: 20px;
+    width: 400px; /* Aligned with typical LeetCard size */
+    height: 180px; /* Height match */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.codechefCard::before {
+    /* Status indicator */
+    content: 'Active';
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 10px;
+    color: #4db5ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(77, 181, 255, 0.1);
+    border: 1px solid rgba(77, 181, 255, 0.2);
+}
+
+.mnIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.codechefInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #f0f0f0 !important; /* Force white text even in light mode */
+    text-align: left;
+}
+
+.codechefInfo h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.codechefInfo p {
+    font-size: 14px;
+    color: #a0a0a0 !important; /* Force grey text */
+    margin: 2px 0;
 }
 
 /* New style to target certificate images specifically */
@@ -58,7 +116,8 @@
 }
 
 @media (width < 800px) {
-  .certificatesContainer {
+  .certificatesContainer,
+  .profilesContainer {
     gap: 20px;
     flex-direction: column;
     align-items: center;

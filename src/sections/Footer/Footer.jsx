@@ -1,10 +1,11 @@
 import styles from './FooterStyles.module.css';
 
 function Footer() {
+  const year = new Date().getFullYear();
   return (
     <section id="footer" className={styles.container}>
       <p>
-        &copy; 2025 Shishpal Polampally. <br />
+        &copy; {year} Shishpal Polampally. <br />
         All rights reserved.
       </p>
     </section>

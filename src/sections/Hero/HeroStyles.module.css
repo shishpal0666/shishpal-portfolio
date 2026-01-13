@@ -10,6 +10,14 @@
   .hero {
     max-width: 200px;
     border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
   }
 
   span {
@@ -32,7 +40,7 @@
   }
 
   button {
-    background-color: var(--btn-color);
+    background: var(--btn-color);
     color: var(--btn-text-color);
     border: none;
     border-radius: 20px;
