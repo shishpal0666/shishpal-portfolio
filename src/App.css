@@ -83,6 +83,10 @@ p {
   line-height: 1.6;
 }
 
+section {
+  padding-bottom: 50px;
+  scroll-margin-top: 100px; /* Offset for floating nav bar */
+}
 .sectionTitle {
   margin-bottom: 30px;
   text-align: center; /* Center titles for better flow */

@@ -27,12 +27,6 @@ function Hero() {
           draggable="false"
           alt="Profile picture of Shishpal Polampally"
         />
-        <img
-          className={styles.colorMode}
-          src={themeIcon}
-          alt="Color mode icon"
-          onClick={toggleTheme}
-        />
       </div>
       <div className={`${styles.info} fade-in`}>
         <h1>

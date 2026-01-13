@@ -1,3 +1,22 @@
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.1);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -14,11 +33,7 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   }
 
-  @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-  }
+
 
   span {
     display: flex;
@@ -64,6 +79,7 @@
 
 .colorModeContainer {
   position: relative;
+  animation: scaleIn 1.5s ease-out forwards;
 }
 
 .colorMode {

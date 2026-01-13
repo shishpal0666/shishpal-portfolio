@@ -5,10 +5,12 @@ import Hero from './sections/Hero/Hero';
 import Projects from './sections/Projects/Projects';
 import Skills from './sections/Skills/Skills';
 import Certificates from './sections/Certificates/Certificates';
+import FloatingNav from './sections/NavBar/FloatingNav';
 
 function App() {
   return (
     <>
+      <FloatingNav />
       <Hero />
       <Projects />
       <Skills />

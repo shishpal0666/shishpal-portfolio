@@ -1,0 +1,77 @@
+.floatingNav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.2); /* Glass effect for light mode */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 50px; /* Pill shape */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .floatingNav {
+  background: rgba(0, 0, 0, 0.3); /* Glass effect for dark mode */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navItem {
+  background: transparent;
+  border: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.navItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+[data-theme='dark'] .navItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background-color: var(--text-color);
+  opacity: 0.3;
+}
+
+.themeIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.themeIcon:hover {
+  transform: rotate(20deg);
+}
+
+@media (width < 600px) {
+  .floatingNav {
+    padding: 8px 15px;
+    gap: 8px;
+    width: 90%;
+    justify-content: space-between;
+  }
+  
+  .navItem {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
