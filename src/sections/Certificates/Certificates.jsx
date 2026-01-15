@@ -35,7 +35,7 @@ function Certificates() {
                         <div className={styles.codechefInfo}>
                             <h3>CodeChef</h3>
                             <p>3★ Coder</p>
-                            <p>Current Rating: 1634</p>
+                            <p>Current Rating: 1771</p>
                         </div>
                     </div>
                 </a>
