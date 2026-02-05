@@ -53,7 +53,7 @@ function Hero() {
 
         <p className={styles.description}>
           I'm a final year Computer Science student at IIIT Pune with a strong
-          foundation in Web Development and Machine Learning. Achived 3 ⭐ in CodeChef.
+          foundation in Web Development and Machine Learning. Achived 4 ⭐ in CodeChef.
         </p>
 
 

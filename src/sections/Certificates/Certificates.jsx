@@ -34,8 +34,8 @@ function Certificates() {
                         <img src={codechefIcon} alt="CodeChef Logo" className={styles.mnIcon} />
                         <div className={styles.codechefInfo}>
                             <h3>CodeChef</h3>
-                            <p>3★ Coder</p>
-                            <p>Current Rating: 1771</p>
+                            <p>4★ Coder</p>
+                            <p>Current Rating: 1886</p>
                         </div>
                     </div>
                 </a>
