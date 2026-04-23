@@ -6,7 +6,7 @@ export const SOCIAL_LINKS = {
     CODECHEF: "https://www.codechef.com/users/shishpal0666",
 };
 
-export const RESUME_LINK = "https://drive.google.com/file/d/1MMuqrEN_zZpHb9a0FJPscN0arjVqKTmv/view?usp=drive_link";
+export const RESUME_LINK = "https://drive.google.com/file/d/1pRQ1GsaF_VpTNxv99_aBMnVa1dKQXsd_/view?usp=drive_link";
 
 export const PROJECT_LINKS = {
     CLASS_FLOW: {
